@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AcademyApplication</string>
+    <string name="background_image">Фоновое изображение</string>
+    <string name="age_permission">13+</string>
 </resources>
