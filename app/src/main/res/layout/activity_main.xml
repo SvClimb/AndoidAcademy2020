@@ -41,7 +41,7 @@
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@id/textView"
-            app:layout_constraintStart_toStartOf="@id/guideline" />
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side" />
 
         <TextView
             android:id="@+id/textView"
@@ -52,12 +52,12 @@
             android:lines="2"
             android:text="Avengers:\nEnd Game"
             android:textAllCaps="false"
-            android:textColor="#ECECEC"
+            android:textColor="@color/raw_white"
             android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/mask"
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/mask" />
 
         <TextView
@@ -67,13 +67,11 @@
             android:fontFamily="@font/roboto"
             android:padding="2dp"
             android:text="Action, Adventure, Fantasy"
-            android:textColor="#FF3466"
+            android:textColor="@color/red_pink"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/textView" />
-
-        <!--#6D6D80-->
 
 
         <ImageView
@@ -83,7 +81,7 @@
             android:layout_marginTop="8dp"
             android:contentDescription="Rating star one"
             android:src="@drawable/ic_star_icon"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/genre" />
 
         <ImageView
@@ -138,7 +136,7 @@
             android:layout_marginTop="4dp"
             android:src="@drawable/ic_star_icon_gray"
             android:text="125 REVIEWS"
-            android:textColor="#6D6D80"
+            android:textColor="@color/gray"
             app:layout_constraintStart_toEndOf="@+id/star_five"
             app:layout_constraintTop_toBottomOf="@id/genre" />
 
@@ -150,11 +148,11 @@
             android:layout_marginTop="28dp"
             android:fontFamily="@font/roboto"
             android:text="Storyline"
-            android:textColor="#ECECEC"
+            android:textColor="@color/raw_white"
             android:textStyle="bold"
 
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/star_one" />
 
         <TextView
@@ -164,9 +162,9 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto"
             android:text="After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/storyline_tv"
 
             />
@@ -178,10 +176,10 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto"
             android:text="Cast"
-            android:textColor="#ECECEC"
+            android:textColor="@color/raw_white"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/story_tv" />
 
 
@@ -195,7 +193,7 @@
             app:layout_constraintEnd_toStartOf="@+id/second_cast_image"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
 
         <ImageView
@@ -229,7 +227,7 @@
             android:layout_marginTop="7dp"
             android:src="@drawable/ckris_hamswort"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@id/third_cast_image"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
@@ -240,7 +238,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="Robert\nDowney Jr."
-            android:textColor="#D8D8D8"
+            android:textColor="@color/color_gray"
             app:layout_constraintEnd_toEndOf="@+id/first_cast_image"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/first_cast_image"
@@ -253,7 +251,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="43dp"
             android:text="Chris\nEvans"
-            android:textColor="#D8D8D8"
+            android:textColor="@color/color_gray"
             app:layout_constraintEnd_toEndOf="@+id/second_cast_image"
             app:layout_constraintStart_toStartOf="@+id/second_cast_image"
             app:layout_constraintTop_toBottomOf="@id/second_cast_image" />
@@ -264,7 +262,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="Mark\nRuffalo"
-            android:textColor="#D8D8D8"
+            android:textColor="@color/color_gray"
             app:layout_constraintEnd_toEndOf="@+id/third_cast_image"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/third_cast_image"
@@ -276,21 +274,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="Chris\nHemsworth"
-            android:textColor="#D8D8D8"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            android:textColor="@color/color_gray"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_side"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/fourth_cast_image"
             app:layout_constraintTop_toBottomOf="@id/fourth_cast_image" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
+            android:id="@+id/guideline_left_side"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_begin="16dp" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
+            android:id="@+id/guideline_right_side"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
