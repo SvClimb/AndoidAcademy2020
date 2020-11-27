@@ -209,14 +209,10 @@
             android:id="@+id/first_cast_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="7dp"
             android:contentDescription="@string/actor_image"
             android:src="@drawable/rober_downie"
-            app:layout_constraintEnd_toStartOf="@+id/second_cast_image"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="@id/guideline_left_side"
+            app:layout_constraintStart_toEndOf="@id/guideline_left_side"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
 
         <ImageView
@@ -224,23 +220,21 @@
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="7dp"
             android:contentDescription="@string/actor_image"
             android:src="@drawable/chris_ewans"
-            app:layout_constraintEnd_toStartOf="@+id/third_cast_image"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/first_cast_image"
+            app:layout_constraintStart_toEndOf="@id/first_cast_image"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
 
         <ImageView
             android:id="@+id/third_cast_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="7dp"
             android:contentDescription="@string/actor_image"
             android:src="@drawable/mark_ruffalo"
-            app:layout_constraintEnd_toStartOf="@+id/fourth_cast_image"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/second_cast_image"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
 
@@ -248,12 +242,10 @@
             android:id="@+id/fourth_cast_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="7dp"
             android:contentDescription="@string/actor_image"
             android:src="@drawable/ckris_hamswort"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/guideline_right_side"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@id/third_cast_image"
             app:layout_constraintTop_toBottomOf="@id/cast_tv" />
 
@@ -298,8 +290,7 @@
             android:layout_marginTop="4dp"
             android:text="@string/chris_hemsworth"
             android:textColor="@color/color_gray"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_right_side"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/fourth_cast_image"
             app:layout_constraintStart_toStartOf="@id/fourth_cast_image"
             app:layout_constraintTop_toBottomOf="@id/fourth_cast_image" />
 
